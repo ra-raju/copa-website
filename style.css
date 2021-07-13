@@ -1,0 +1,82 @@
+/* ===============================
+             common style 
+==================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.btn {
+  width: 16.8rem;
+  height: 4.4rem;
+  background-color: #e02c6d;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1rem 1.6rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+/* ===============================
+             common style end
+==================================*/
+
+/* ================================
+        header section start 
+==================================*/
+header {
+  background-color: #2d25a0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-title {
+  width: 48.5rem;
+  height: 23rem;
+}
+
+.hero-title h1 {
+  font-size: 6.4rem;
+  color: #fff;
+  margin-bottom: 2.7rem;
+}
+
+.header-btn i {
+  margin: 0 0.8rem;
+}
+
+.hero-img {
+  width: 55.6rem;
+  height: 43.8rem;
+  margin: 3rem 0;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 42.8rem;
+}
+
+/*==================================
+             header section end 
+ ==================================*/
