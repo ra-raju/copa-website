@@ -16,9 +16,9 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  /* background-color: #e8ecf2; */
   background-color: #fff;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .btn {
@@ -76,7 +76,7 @@ body {
 header {
   background-color: #2d25a0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
