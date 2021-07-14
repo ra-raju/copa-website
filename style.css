@@ -14,6 +14,7 @@ html {
 
 body {
   font-family: sans-serif;
+  background-color: thistle;
 }
 
 .btn {
@@ -80,3 +81,55 @@ header {
 /*==================================
              header section end 
  ==================================*/
+
+/*==================================
+             players section start 
+=====================================*/
+main {
+  width: 70vw;
+  height: auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  margin: 5rem auto;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.7rem;
+}
+.player {
+  width: 33rem;
+  height: 47.4rem;
+  padding: 1.5rem;
+  box-shadow: 0.5rem 0.5rem 0.4rem rgba(194, 21, 21, 0.166);
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.player img {
+  width: 30rem;
+  height: 25.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.player h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.player p {
+  font-size: 1.6rem;
+  color: #6c6c6c;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+/* =================================
+            players section end
+ ==================================== */
