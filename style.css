@@ -380,3 +380,72 @@ footer p {
 /* =======================================
             footer section end
 ===========================================*/
+
+/* media queries  */
+
+/* for mobile  */
+
+@media screen and (max-width: 688px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-title {
+    /* margin: 3rem; */
+    padding: 0.5rem 5rem;
+    font-size: 3.6rem;
+  }
+
+  .hero-title h1 {
+    font-size: 3.6rem;
+  }
+
+  .hero-img {
+    margin: 4rem;
+    width: 32.6rem;
+  }
+  .hero-img img {
+    margin: 5rem 0;
+  }
+  main {
+    width: 100%;
+  }
+  .players-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .players,
+  .teams {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .highlight {
+    flex-direction: column;
+  }
+
+  .highlight-info {
+    width: 34.9rem;
+    height: 39.9rem;
+    margin-bottom: 4rem;
+  }
+
+  .highlight-img {
+    width: 35.9rem;
+    margin: 0;
+  }
+
+  .team-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sponsors {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .footer-logo {
+    width: 27.4rem;
+  }
+}
