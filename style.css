@@ -126,9 +126,12 @@ header:hover {
              players section start 
 =====================================*/
 main {
-  width: 70%;
+  width: 100%;
   height: auto;
-  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .players {
@@ -217,7 +220,7 @@ main {
 .teams {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 5rem;
 }
 .team {
   height: 33rem;
@@ -381,16 +384,18 @@ footer p {
             footer section end
 ===========================================*/
 
-/* media queries  */
+/*==========================================
+           media queries
+==============================================  */
 
-/* for mobile  */
+/*=============== for mobile  ===============*/
 
 @media screen and (max-width: 688px) {
-  .hero-section {
+  .hero-section,
+  .highlight {
     flex-direction: column;
   }
   .hero-title {
-    /* margin: 3rem; */
     padding: 0.5rem 5rem;
     font-size: 3.6rem;
   }
@@ -406,9 +411,7 @@ footer p {
   .hero-img img {
     margin: 5rem 0;
   }
-  main {
-    width: 100%;
-  }
+
   .players-section {
     display: flex;
     align-items: center;
@@ -418,9 +421,6 @@ footer p {
   .players,
   .teams {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .highlight {
-    flex-direction: column;
   }
 
   .highlight-info {
@@ -447,5 +447,36 @@ footer p {
 
   .footer-logo {
     width: 27.4rem;
+  }
+}
+
+/*=================== for tablet ================ */
+
+@media screen and (min-width: 689px) and (max-width: 991px) {
+  .hero-section,
+  .highlight {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    margin-top: 3rem;
+    width: 44.5rem;
+    height: 45rem;
+  }
+
+  .players,
+  .teams {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlight-info {
+    width: 65.9rem;
+    height: 35.9rem;
+  }
+
+  .highlight-img {
+    width: 64.7rem;
+    height: 42.7rem;
+    margin-left: -2rem;
   }
 }
