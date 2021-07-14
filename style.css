@@ -27,6 +27,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   font-size: 1.6rem;
+  font-weight: 900;
   padding: 1rem 1.6rem;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
@@ -41,7 +42,7 @@ body {
 }
 
 .btn:hover {
-  background-color: green;
+  background-color: blueviolet;
 }
 
 .arrow-icon {
@@ -55,6 +56,12 @@ body {
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
   font-weight: 400;
+}
+
+.secondary-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 /* ===============================
@@ -73,10 +80,12 @@ header {
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
+  opacity: 0.9;
 }
 
 header:hover {
   background-color: darkblue;
+  opacity: 1;
 }
 
 .hero-section {
@@ -147,12 +156,6 @@ main {
   margin-bottom: 1.4rem;
 }
 
-.player h2 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
 /* =================================
             players section end
  ==================================== */
@@ -198,6 +201,73 @@ main {
 
 /* =================================
             highlight section end
+ ==================================== */
+/* =================================
+          team section start
+ ==================================== */
+.team-section {
+  margin: 7rem 0;
+}
+.team-heading {
+  font-size: 6rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+
+.teams {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.team {
+  height: 30rem;
+  width: 25rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem #ddd, -0.5rem -0.5rem 1rem #eee;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.team img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.team h2 {
+  margin: 1rem 0;
+}
+
+.team-details p {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+.team-details p span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.team-details .win {
+  color: green;
+}
+.team-details .loss {
+  color: red;
+}
+.team-details .draw {
+  color: goldenrod;
+}
+
+/* =================================
+          team section end
  ==================================== */
 
 /* ======================================
