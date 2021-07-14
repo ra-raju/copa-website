@@ -14,7 +14,9 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: #e8ecf2;
+  /* background-color: #e8ecf2; */
+  background-color: #fff;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -31,10 +33,28 @@ body {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+.btn:hover {
+  background-color: green;
 }
 
 .arrow-icon {
   margin: 0 0.8rem;
+}
+
+.para {
+  font-size: 1.6rem;
+  color: #6c6c6c;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  font-weight: 400;
 }
 
 /* ===============================
@@ -48,6 +68,15 @@ header {
   background-color: #2d25a0;
   height: 100vh;
   width: 100vw;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+header:hover {
+  background-color: darkblue;
 }
 
 .hero-section {
@@ -103,7 +132,8 @@ main {
   width: 33rem;
   height: 47.4rem;
   padding: 1.5rem;
-  box-shadow: 0.5rem 0.5rem 0.4rem rgba(194, 21, 21, 0.166);
+  box-shadow: 0.5rem 0.5rem 0.4rem rgba(238, 209, 209, 0.338),
+    -0.5rem -0.5rem 0.4rem rgba(238, 209, 209, 0.338);
   background-color: #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -120,16 +150,9 @@ main {
 .player h2 {
   font-size: 2.8rem;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
-.player p {
-  font-size: 1.6rem;
-  color: #6c6c6c;
-  margin-top: 1rem;
-  letter-spacing: 0.1rem;
-  line-height: 2.5rem;
-  font-weight: 400;
-}
 /* =================================
             players section end
  ==================================== */
@@ -157,15 +180,13 @@ main {
 }
 
 .highlight-info p {
-  font-size: 1.6rem;
-  color: #6c6c6c;
   margin-bottom: 3rem;
 }
 
 .highlight-img {
   width: 56.7rem;
   height: 42.7rem;
-  margin-left: 5rem;
+  margin-left: 6.6rem;
   /* width: 30rem;
   height: 20rem; */
 }
@@ -178,3 +199,68 @@ main {
 /* =================================
             highlight section end
  ==================================== */
+
+/* ======================================
+            footer section start 
+=========================================*/
+
+/* =======================================
+            footer section end
+===========================================*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 48.4rem;
+  height: 11rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-link {
+  margin: 2rem 0;
+}
+
+.footer-link a {
+  text-decoration: none;
+  text-align: center;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin: 1rem;
+  background-color: rgba(128, 128, 128, 0.566);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.fa-instragam {
+  color: #e95950;
+}
+
+.fa-twitter {
+  color: red;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+
+footer p {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
