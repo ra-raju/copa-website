@@ -132,6 +132,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 5rem 0;
 }
 
 .players {
@@ -347,10 +348,9 @@ footer {
 .footer-link a {
   text-decoration: none;
   text-align: center;
-  height: 3.2rem;
-  width: 3.2rem;
   margin: 1rem;
-  background-color: rgba(128, 128, 128, 0.566);
+  background-color: ghostwhite;
+  border: 1px solid #333;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -359,6 +359,12 @@ footer {
   text-align: center;
   font-size: 2rem;
   padding: 1rem;
+}
+
+.footer-link a:hover {
+  background-color: rgba(128, 128, 128, 0.869);
+  border: none;
+  box-shadow: 0.5rem 0.5rem 2rem #ddd, 0.5rem 0.5rem 2rem #eee;
 }
 
 .fa-instragam {
@@ -396,8 +402,8 @@ footer p {
     flex-direction: column;
   }
   .hero-title {
-    padding: 0.5rem 5rem;
-    font-size: 3.6rem;
+    width: 27.5rem;
+    height: 23rem;
   }
 
   .hero-title h1 {
@@ -439,6 +445,10 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .teams {
+    grid-gap: 2rem;
   }
 
   .sponsors {
